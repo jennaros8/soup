@@ -1,10 +1,10 @@
 # Chicken Soup 1
 
-A beautifully styled recipe page for a bone broth chicken & lentil soup—an ayurvedic-persian fusion healing soup inspired by ash reshteh.
+
 
 ## For returning
 
-This soup is meant for those returning from a long journey, cooked to wish them good health and ease their transition home.
+
 
 ## What's included
 
