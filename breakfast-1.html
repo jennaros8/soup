@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>breakfast 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@300;400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #ffffff;
+      color: #3b1f3a;
+      font-family: Inter, 'Fira Code', 'DM Mono', system-ui, -apple-system, sans-serif;
+      line-height: 1.8;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255,255,255,1);
+      border-radius: 12px;
+      padding: 52px 40px 100px;
+    }
+
+    .hero-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    .pub {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #9a9390;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(110,140,200,0.08);
+    }
+
+    h1 {
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      color: #9a9390;
+      letter-spacing: 0.08em;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c8a882;
+      margin-bottom: 16px;
+      margin-top: 40px;
+    }
+
+    .ingredients-block {
+      margin-bottom: 48px;
+    }
+
+    .ingredient-group-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #9a9390;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    .ingredient-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(110,140,200,0.07);
+      font-size: 16px;
+    }
+
+    .ingredient-name {
+      color: #3b1f3a;
+    }
+
+    .ingredient-amount {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: #9a9390;
+      letter-spacing: 0.05em;
+      margin-left: 16px;
+      flex-shrink: 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(110,140,200,0.1);
+      margin: 48px 0;
+    }
+
+    .step {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(110,140,200,0.08);
+    }
+
+    .step:last-of-type {
+      border-bottom: none;
+    }
+
+    .step-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: #c8a882;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .step-body {
+      font-size: 16px;
+      color: #4a2545;
+      line-height: 1.9;
+    }
+
+    .footer {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .footer img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <img src="breakfast-hero.jpg" alt="breakfast bowl with roasted beets, berry yogurt, and avocado" class="hero-img">
+
+    <div class="pub">grimoire · recipes</div>
+
+    <h1>breakfast 1</h1>
+    <div class="subtitle">serves 1 · ~20 min · for heaviness</div>
+
+    <div class="ingredients-block">
+      <div class="section-label">ingredients</div>
+
+      <div class="ingredient-group-title">the base</div>
+      <div class="ingredient-row"><span class="ingredient-name">apple</span><span class="ingredient-amount">1</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">blueberries</span><span class="ingredient-amount">1 handful</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">dates, pitted & chopped</span><span class="ingredient-amount">2 whole</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">golden flaxseed, ground fine</span><span class="ingredient-amount">1–2 tbsp</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">ghee</span><span class="ingredient-amount">1 tbsp</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">salt & cinnamon</span><span class="ingredient-amount">to taste</span></div>
+
+      <div class="ingredient-group-title">to serve</div>
+      <div class="ingredient-row"><span class="ingredient-name">greek yogurt</span><span class="ingredient-amount">1 cup</span></div>
+      <div class="ingredient-row"><span class="ingredient-name">sliced avocado</span><span class="ingredient-amount">½</span></div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="step">
+      <div class="step-num">step 01</div>
+      <div class="step-title">cook the fruit</div>
+      <p class="step-body">melt ghee in a small saucepan. add blueberries, apples, dates, and a couple tablespoons of water, cinnamon, and a dash of salt. cover, bring to a boil, then lower heat until apples are soft.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-num">step 02</div>
+      <div class="step-title">add flaxseed</div>
+      <p class="step-body">stir in ground flaxseed and allow to cook. mixture should be soft and jammy.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-num">step 03</div>
+      <div class="step-title">eat</div>
+      <p class="step-body">serve over greek yogurt. cottage cheese could be good too.</p>
+    </div>
+
+  </div>
+</body>
+</html>
