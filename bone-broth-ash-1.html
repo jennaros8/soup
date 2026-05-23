@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chicken soup 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: linear-gradient(180deg,#fbfdff 0%, #eef6ff 100%);
+      color: #0f1720;
+      font-family: Inter, 'Fira Code', 'DM Mono', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.8;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 40px 20px;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.72);
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(16,32,39,0.06);
+      backdrop-filter: blur(6px) saturate(120%);
+      padding: 52px 40px 100px;
+    }
+
+    .pub {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #9a9390;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(110,140,200,0.08);
+    }
+
+    h1 {
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #5b6b78;
+      font-size: 17px;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: #9a9390;
+      letter-spacing: 0.08em;
+      margin-bottom: 44px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #4f8efb;
+      margin: 36px 0;
+    }
+
+    .lore {
+      font-style: italic;
+      color: #5b6b78;
+      border-left: 2px solid rgba(79,142,251,0.3);
+      padding-left: 20px;
+      margin: 32px 0;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    h2 {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #c4813a;
+      margin: 44px 0 18px;
+    }
+
+    .ingredient-group { margin-bottom: 24px; }
+
+    .ig-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: #9e4a2a;
+      margin-bottom: 8px;
+    }
+
+    ul { list-style: none; padding: 0; }
+
+    ul li {
+      padding: 7px 0;
+      border-bottom: 1px solid #e2dbd3;
+      font-size: 16px;
+      color: #2d2a27;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    .amt {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: #9a9390;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .step { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid #e2dbd3; }
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: #c4813a;
+      margin-bottom: 4px;
+    }
+
+    .step-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .step-body { font-size: 16px; line-height: 1.85; color: #3a3733; margin: 0; }
+
+    .footer {
+      margin-top: 64px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(16,32,39,0.06);
+    }
+
+    .footer img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      body { font-size: 16px; }
+      .page { padding: 36px 20px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="pub">grimoire  ·</div>
+
+  <h1>chicken soup 1</h1>
+
+  <div class="meta">
+    <span>serves 5~</span>
+    <span>1 hour</span>
+    <span>it'll get better on day 3</span>
+  </div>
+
+  <div class="lore">
+    for returning
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>ingredients</h2>
+
+  <div class="ingredient-group">
+    <div class="ig-title">the base</div>
+    <ul>
+      <li><span>chicken thighs</span><span class="amt">4</span></li>
+      <li><span>bone broth</span><span class="amt">4 cups</span></li>
+      <li><span>canned lentils, drained</span><span class="amt">1 cup</span></li>
+      <li><span>sweet potato, japanese and purple, cubed small</span><span class="amt">1</span></li>
+      <li><span>carrots</span><span class="amt">1 cup</span></li>
+      <li><span>canned diced tomatoes with green chilies</span><span class="amt">1 cup</span></li>
+      <li><span>tomato paste</span><span class="amt">2 tbsp</span></li>
+      <li><span>yellow onion, diced</span><span class="amt">1</span></li>
+      <li><span>fresh ginger, grated</span><span class="amt">1 tbsp</span></li>
+      <li><span>coconut milk</span><span class="amt">½ cup</span></li>
+      <li><span>fresh spinach</span><span class="amt">2 cups</span></li>
+      <li><span>lion's mane mushroom, sliced thick</span><span class="amt">1 cup</span></li>
+      <li><span>lemon, juiced</span><span class="amt">½</span></li>
+      <li><span>olive or coconut oil</span><span class="amt">3 tbsp</span></li>
+      <li><span>bay leaves</span><span class="amt">2</span></li>
+      <li><span>salt</span><span class="amt">1 tsp</span></li>
+    </ul>
+  </div>
+
+  <div class="ingredient-group">
+    <div class="ig-title">the spice paste</div>
+    <ul>
+      <li><span>cumin seed</span><span class="amt">1 tsp</span></li>
+      <li><span>coriander seed</span><span class="amt">1 tsp</span></li>
+      <li><span>black pepper</span><span class="amt">½ tsp</span></li>
+      <li><span>cinnamon</span><span class="amt">½ tsp</span></li>
+      <li><span>tears</span><span class="amt">½ tsp</span></li>
+    </ul>
+  </div>
+
+  <div class="ingredient-group">
+    <div class="ig-title">to serve</div>
+    <ul>
+      <li><span>cooked rice</span><span class="amt">2 cups</span></li>
+      <li><span>dried parsley or chives</span><span class="amt">1 tsp</span></li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>method</h2>
+
+  <div class="step">
+    <div class="step-num">step 01</div>
+    <div class="step-title">sear the chicken</div>
+    <p class="step-body">pat chicken thighs dry — heat oil in your heaviest pot on medium-high until shimmering. add chicken and don't touch it for 4 minutes. flip, 4 more minutes. pull them out and set aside.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">step 02</div>
+    <div class="step-title">bloom the whole spices</div>
+    <p class="step-body">lower heat to medium. in the same pot, add cumin seed and coriander seed. toast for 60-90 seconds, stirring constantly, until they pop</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">step 03</div>
+    <div class="step-title">build the spice paste</div>
+    <p class="step-body">add a splash more oil if needed. add onion and cook 8-10 minute. add ginger and stir for 2 minutes. add all the ground spices. stir constantly for 90 seconds. add tomato paste and smash it into the spices. cook 2 full minutes</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">step 04</div>
+    <div class="step-title">broth</div>
+    <p class="step-body">pour in bone broth and scrape everything off the bottom. add diced tomatoes, lentils, carrots, sweet potato, bay leaves, and salt. return the chicken thighs to the pot. bring to a boil, then reduce to a low simmer, lid on, 25 minutes</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">step 05</div>
+    <div class="step-title">sear the lion's mane</div>
+    <p class="step-body">slice lion's mane into thick slabs. heat a separate dry pan on medium-high and sear</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">step 06</div>
+    <div class="step-title">shred and finish</div>
+    <p class="step-body">pull chicken out and shred with two forks. return shredded chicken and lion's mane to the pot. pour in coconut milk. add spinach, lid on for 2 minutes. squeeze in lemon. remove bay leaves. taste and adjust salt</p>
+  </div>
+
+  <div class="footer">
+    <img src="footer.jpg" alt="They're boiling me into a soup at work tomorrow">
+  </div>
+
+</div>
+
+</body>
+</html>
